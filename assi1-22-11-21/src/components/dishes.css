@@ -1,0 +1,63 @@
+.mD{
+    display: grid;
+    width:70%;
+    margin:auto;
+    grid-template-columns: auto auto auto;
+}
+.mea{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.ing{
+    display: flex;
+    flex-direction: column;
+}
+.disI{
+    width:200px;
+    margin-top: 8%;
+}
+.meaS{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ingS{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgS{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.procedure{
+    width:70%;
+    margin:auto;
+}
+.search{
+    width:70%;
+    height:25px;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.search>input{
+    width:70%;
+    height:100%;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+.search>input:focus{
+    outline:none
+}
+.search>button{
+    height: 100%;
+    background-color:lightcoral;
+    border-radius:3px;
+    outline: none;
+}
