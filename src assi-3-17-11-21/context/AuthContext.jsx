@@ -24,7 +24,7 @@ export default function AuthContextProvider({children}){
         })
     }
 return (
-    <AuthContext.Provider value={{token,handleSubmit,name,setName,password,setPassword}}>
+    <AuthContext.Provider value={{token,handleSubmit,name,setName,password,setPassword,setToken}}>
         {children}
     </AuthContext.Provider>
 )
