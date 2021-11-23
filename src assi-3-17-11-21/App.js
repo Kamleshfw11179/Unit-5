@@ -11,6 +11,10 @@ function App() {
   return(
     <>
    <h1>Hello {name}</h1>
+   <div style={{textAlign:"center"}}>
+   <h3>Your access token : {token}</h3>
+   <button onClick={()=>setToken("")}>LogOut</button>
+   </div>
    </>
   )
   }
