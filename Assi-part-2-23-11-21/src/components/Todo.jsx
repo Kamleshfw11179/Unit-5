@@ -28,10 +28,18 @@ export default function Todo(){
                 ,setTitle("")}}>+</button>
         </div>
         <div>
-        {x.map((e)=>{
+      {x.length===0?<div>
+        <h1 style={{fontWeight:"100" ,margin:"auto"}}>Please add todo</h1>
+        </div>:x.map((e)=>{
+            if(x.length===0){
+                return(
+                    <h1 style={{fontWeight:100}}>Please Add Todo</h1>
+                )
+            }else{
             return(
                 <TodoList e={e}/>
             )
+            }
         })}
             </div>
         </>
