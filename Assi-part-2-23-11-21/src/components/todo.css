@@ -1,0 +1,77 @@
+.sDiv{
+    width:100%;
+    margin:auto;
+    padding: 1%;
+}
+
+.sDiv>input{
+    height:28px;
+    width:60%;
+    margin-right: 3%;
+    border:none;
+    border-bottom:3px solid lightgrey
+}
+.sDiv>input:focus{
+    outline:none
+}
+.add{
+    height:40px;
+    width:40px;
+    border-radius: 50px;
+    margin-left: 5%;
+    border:none;
+    font-size: 30px;
+}
+.addI{
+    height:40px;
+    margin-left: 5%;
+    width:80%;
+    text-align: center;
+    border:none;
+    border-bottom: 2px solid lightgrey;
+}
+.addI:focus{
+    outline: none;
+}
+.div1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:60%;
+    margin: auto;
+}
+
+.showDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width:60%;
+    margin: auto;
+
+}
+.updateButtons{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+.updateButtons>button{
+    margin:0 2% 0 2%;
+    height:25px;
+}
+.mainData{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.mainData>h2,h1{
+    font-weight: 100;
+}
+button:hover{
+    background-color: crimson;
+    color: white;
+}
