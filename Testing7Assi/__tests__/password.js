@@ -31,7 +31,7 @@ expect.extend({
         }else{
             return {
                 message: () =>
-                  `expected ${data} is not a valid string`,
+                  `expected ${data} is not a valid string length should be more than 6`,
                 pass: false,
               }   
         };
@@ -50,7 +50,7 @@ expect.extend({
 }else{
         return {
             message: () =>
-              `expected ${data} is not a valid string`,
+              `expected ${data} is not a valid string enter a number`,
             pass: false,
           }   
     };
@@ -73,7 +73,7 @@ expect.extend({
 }else{
         return {
             message: () =>
-              `expected ${data} is not a valid string`,
+              `expected ${data} is not a valid string donot have a uppercase`,
             pass: false,
           }   
     };
@@ -96,11 +96,34 @@ expect.extend({
 }else{
         return {
             message: () =>
-              `expected ${data} is not a valid string`,
+              `expected ${data} is not a valid string donot have a lower case letter`,
             pass: false,
           }   
     };
     }
+})
+
+expect.extend({
+  toCheckSpecial(data){
+      let s = false;
+      let spChars = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/
+      if(spChars.test(data)){
+        s = true
+      }
+      if(s){
+          return {
+          message: () =>
+            `expected ${data} is a valid string`,
+          pass: true,
+        }
+}else{
+      return {
+          message: () =>
+            `expected ${data} is not a valid string dosenot have a special charecter`,
+          pass: false,
+        }   
+  };
+  }
 })
 test("if it is a string",()=>{
 const data = "abc";
@@ -123,4 +146,7 @@ test("if uppercase letter is there",()=>{
 })
 test("if lowercase letter is there",()=>{
     expect(checkPassword("bAd2")).toCheckLower()
+})
+test("if special charecter is there",()=>{
+  expect(checkPassword("bAd@2")).toCheckSpecial()
 })
