@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "name": "Kamlesh Kumar Pradhan",
+      "email": "kamlesh_fw11_179@masai.school",
+      "password": "masaischool",
+      "id": 1
+    },
+    {
+      "name": "Kamlesh Kumar Pradhan",
+      "email": "kamlesh_fw11_179@masai.school",
+      "password": "masaischool",
+      "id": 2
+    },
+    {
+      "name": "Raj",
+      "email": "hari@mail.com",
+      "password": "masaischool",
+      "id": 3
+    }
+  ]
+}
